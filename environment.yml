@@ -1,0 +1,17 @@
+name: urbanveg
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - matplotlib
+  - xarray
+  - zarr
+  - netcdf4
+  - earthengine-api        # Google Earth Engine Python client (used in 01_extract.py)
+  - pip
+  - pip:
+      # PyTorch: pip is the recommended install on Apple Silicon (MPS) and CPU.
+      # CUDA-GPU users should instead follow the selector at https://pytorch.org
+      - torch
