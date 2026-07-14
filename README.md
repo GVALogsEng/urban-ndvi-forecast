@@ -1,4 +1,4 @@
-# Urban Vegetation (NDVI) Forecasting — Shanghai
+# Urban Vegetation (NDVI) Forecasting in Shanghai
 
 One-month-ahead forecasting of urban greenness (NDVI) for central Shanghai using a
 **ConvLSTM**, benchmarked honestly against seasonal baselines and evaluated only on
