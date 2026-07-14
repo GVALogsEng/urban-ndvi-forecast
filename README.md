@@ -18,7 +18,7 @@ Cities are driven by vegetation dynamics that matter for urban heat, air quality
 liveability. This project asks a focused, testable question:
 
 **Can a spatio-temporal deep-learning model forecast next-month urban greenness better
-than simple baselines, and where does it succeed?**
+than simple baselines — and where does it succeed?**
 
 The point is *not* to show that deep learning "works," but to measure exactly how much
 it adds over transparent baselines, on real data, with honest handling of missingness.
@@ -115,12 +115,15 @@ python 07_robustness.py     # 5-seed + bootstrap (a few minutes)
 Steps 02 and 06 produce diagnostic figures and are optional for reproducing the
 headline number. Scripts also run cell-by-cell in Spyder (`# %%` cells).
 
+Alternatively, skip step 01 and download the model-ready cube directly from the DOI
+below (unzip into `data/`), then start from `04_baselines.py`.
+
 ## Data
 
 - **Source:** MODIS `MOD13Q1` via Google Earth Engine (NASA LP DAAC), free for research.
 - **Published model-ready dataset:** the cleaned monthly cube + observed mask
-  (`shanghai_ndvi_modelready.zarr`) is archived with a citable DOI:
-  **[DOI: to be added after upload — e.g. 10.5281/zenodo.XXXXXXX]**
+  (`shanghai_ndvi_modelready.zarr`) is archived on Zenodo with a citable DOI:
+  **[10.5281/zenodo.21345765](https://doi.org/10.5281/zenodo.21345765)** (CC-BY-4.0).
 
 ## Limitations
 
@@ -138,13 +141,17 @@ Stated plainly, because they matter and they motivate the next step:
 If you use this code or dataset, please cite:
 
 ```
-[Author]. (2026). Urban Vegetation (NDVI) Forecasting — Shanghai. GitHub repository.
-Dataset: [DOI].
+Arone, G. (2026). Urban Vegetation (NDVI) Forecasting — Shanghai [Software].
+GitHub: https://github.com/GVALogsEng/urban-ndvi-forecast
+
+Arone, G. (2026). Model-ready monthly NDVI data cube for central Shanghai
+(2012–2024) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.21345765
 ```
 
 ## License
 
-Released under the MIT License (see `LICENSE`).
+Code released under the MIT License (see `LICENSE`). The published dataset is released
+under CC-BY-4.0 via the DOI above.
 
 ## Acknowledgments
 
